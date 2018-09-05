@@ -153,6 +153,7 @@ body {
 .map-cover {
     margin-top: 130px !important;
     height: 400px;
+    background: #124a7c;
 }
 
 .chart-cover .chart {
@@ -164,6 +165,8 @@ body {
     height: 85%;
     width: 96%;
     margin: 50px auto 10px;
+    border: 2px solid #069cb1;
+    border-radius: 2px;
 }
 
 .map-cover .chart-title {

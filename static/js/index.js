@@ -541,7 +541,7 @@ function drawBoundaries(name) {
                 strokeWeight: 2,
                 strokeOpacity: 0.8,
                 StrokeStyle: "solid",
-                strokeColor: "#ff0000",
+                strokeColor: "#f47213",
                 fillColor: "none",
                 fillOpacity: 0
             });
@@ -552,7 +552,15 @@ function drawBoundaries(name) {
 
 //绘热力图
 function drawHeatmap(points) {
-    heatmapOverlay = new BMapLib.HeatmapOverlay({"radius": 20});
+    heatmapOverlay = new BMapLib.HeatmapOverlay({
+        "radius": 20,
+        "gradient":
+            {
+                .2: 'rgb(163,82,221)',
+                .5: 'rgb(224,76,143)',
+                .8: 'rgb(200,29,106)'
+            }
+    });
     bmap.addOverlay(heatmapOverlay);
     heatmapOverlay.setDataSet({data: points, max: 50});
 }
@@ -560,7 +568,7 @@ function drawHeatmap(points) {
 //更新数据
 function updateData() {
     $.ajax({
-        url: 'http://192.168.0.102/api/index/propertylist',
+        url: 'http://192.168.0.132/api/index/propertylist',
         type: "GET",
         dataType: "json",
         success: function (data, status) {
