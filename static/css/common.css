@@ -1,0 +1,132 @@
+/*列表*/
+body, html, #allmap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    font-family: "微软雅黑";
+}
+
+.self-bg-blue {
+    background-color: #3D82DA !important;
+}
+
+.self-text-white {
+    color: rgba(255, 255, 255, .5) !important;
+}
+
+.self-text-white:hover {
+    color: #ffffff !important;
+}
+
+.self-header .nav-item {
+    width: 100px;
+    text-align: center;
+}
+
+.hover-container {
+    background: red !important;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 1 !important;
+}
+
+.note-name, .note-num {
+    height: 40px;
+    text-align: center;
+    display: inline-block;
+    line-height: 40px;
+    width: 100%;
+    color: white;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.note-name {
+    margin-top: 5px;
+}
+
+.note-num {
+    margin-top: -10px;
+}
+
+.ml-10r {
+    margin-left: 10rem !important;
+}
+
+.over-map {
+    z-index: 10;
+}
+
+.mt-n-56p {
+    margin-top: -56px;
+}
+
+
+#showMethods{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    background: white;
+    width: 442px;
+    border: 1px solid #dddddd;
+}
+
+#conditions {
+    position: absolute;
+    top: 170px;
+    left: 50px;
+    background: white;
+    border: 1px solid #dddddd;
+}
+
+#conditions .dropdown-menu {
+    min-width: 50px !important;
+}
+
+#conditions .dropdown .btn {
+    border: 1px solid #dddddd;
+    border-radius: 0px;
+    box-shadow: none;
+    text-align: left;
+    width: 100px;
+}
+
+#conditions .dropdown .btn span {
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 70px;
+    display: inline-block;
+    line-height: 100%;
+}
+
+#conditions .dropdown-toggle::after {
+    position: absolute;
+    top: 13px;
+    right: 10px;
+}
+
+#conditions .dropdown-item.active, #conditions .dropdown-item:active {
+    color: black !important;
+    background-color: transparent !important;
+}
+
+#conditions .dropdown-item:focus, .dropdown-item:hover {
+    background-color: #ddd !important;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+#conditions .dropdown-item {
+    font-size: 14px;
+}
+
+#conditions .second-dropdown {
+    left: 274px;
+    max-height: 627px;
+    overflow-y: auto;
+}
+
+

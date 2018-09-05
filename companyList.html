@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./static/css/common.css">
+    <title>企业展示</title>
+</head>
+
+<body>
+<nav class="navbar navbar-light self-bg-blue text-white justify-content-between navbar-expand-lg self-header over-map">
+    <a class="navbar-brand ml-10r">
+        <img src="./static/images/logo.png" width="50" height="30" class="d-inline-block align-top" alt="">
+        贵阳市商业版图展示网站
+    </a>
+    <div class="collapse navbar-collapse " id="navbarText">
+        <ul class="navbar-nav ml-10r mr-auto">
+            <li class="nav-item ">
+                <a class="nav-link self-text-white" href="#">首页 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link text-white" href="./companyList.html">企业展示</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link self-text-white" href="./communityList.html">楼盘展示</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="h-100 mt-n-56p">
+    <div id="allmap"></div>
+    <div id="conditions">
+        <div class="mx-2 mt-2"> 筛选条件: <a href="#" class="badge badge-primary float-right" @click="reset">重置</a></div>
+        <div class="btn-group">
+            <div class="dropdown mx-2 my-2">
+                <button class="btn bg-white dropdown-toggle btn-sm" type="button" id="dropdownMenuButton1"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span v-text="selectedArea.name"></span>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#" v-for="item in areaList" @click="changeArea(item)">{{item.name}}</a>
+                </div>
+            </div>
+            <div class="dropdown mr-2 my-2">
+                <button class="btn bg-white dropdown-toggle btn-sm" type="button" id="dropdownMenuButton2"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span v-text="selectedMoney.name"></span>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#" v-for="item in moneyList" @click="changeMoney(item)">{{item.name}}</a>
+                </div>
+            </div>
+            <div class="dropdown mr-2 my-2">
+                <button class="btn bg-white dropdown-toggle btn-sm" type="button" id="dropdownMenuButton3"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span v-text="selectedDate.name"></span>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#" v-for="item in dateList" @click="changeDate(item)">{{item.name}}</a>
+                </div>
+            </div>
+            <div class="dropdown mr-2 my-2">
+                <button class="btn bg-white dropdown-toggle  btn-sm" type="button" id="dropdownMenuButton4"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span v-text="selectedWork.name"></span>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+                        <!-- Dropdown menu links -->
+                    <a class="dropdown-item" href="#" v-for="item in workList"  @mouseover="showSecondWork(item)"  @click="changeWork(item)">{{item.name}}</a>
+                </div>
+                <div class="dropdown-menu second-dropdown" >
+                    <a class="dropdown-item" href="#" v-for="item in secondWorkList"     @click="changeWork(item)">{{item.name}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script type="text/javascript"
+        src="http://api.map.baidu.com/getscript?v=3.0&ak=OhF7yQeMCyrhdfZt1E3w4OvtCj0WOngK"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script type="text/javascript" src="./static/js/companyList.js"></script>
+</body>
+</html>

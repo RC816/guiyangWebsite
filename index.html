@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <title>首页</title>
+</head>
+
+<body>
+<div class="header">
+    <div class="header-container">
+        <img src="./static/images/logo.png">
+        <span class="logo-title">贵阳市企业楼盘展示</span>
+        <div class="title-list">
+            <span class="title">首页</span>
+            <span class="title">企业展示</span>
+            <span class="title">楼盘展示</span>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="left">
+        <div class="chart-cover">
+            <div id="leftChart1" class="chart"></div>
+            <div class="chart-mask"></div>
+            <div class="chart-cover-dot top-left"></div>
+            <div class="chart-cover-dot top-right"></div>
+            <div class="chart-cover-dot bottom-left"></div>
+            <div class="chart-cover-dot bottom-right"></div>
+        </div>
+        <div class="chart-cover">
+            <div id="leftChart2" class="chart"></div>
+            <div class="chart-mask"></div>
+            <div class="chart-cover-dot top-left"></div>
+            <div class="chart-cover-dot top-right"></div>
+            <div class="chart-cover-dot bottom-left"></div>
+            <div class="chart-cover-dot bottom-right"></div>
+        </div>
+        <div class="chart-cover">
+            <div id="leftChart3" class="chart"></div>
+            <div class="chart-mask"></div>
+            <div class="chart-cover-dot top-left"></div>
+            <div class="chart-cover-dot top-right"></div>
+            <div class="chart-cover-dot bottom-left"></div>
+            <div class="chart-cover-dot bottom-right"></div>
+        </div>
+    </div>
+    <div class="center">
+        <div class="top">
+            <div class="item">
+                <img src="./static/images/top_logo1.png" class="icon">
+                <div class="intro"> 总企业数<span class="sub-intro">（个）</span></div>
+                <div class="box "> 22222</div>
+            </div>
+            <div class="item">
+                <img src="./static/images/top_logo2.png" class="icon">
+                <div class="intro"> 年增长</div>
+                <div class="box "> 10.9%</div>
+            </div>
+            <div class="item">
+                <img src="./static/images/top_logo3.png" class="icon">
+                <div class="intro"> 总注册资本<span class="sub-intro">（万元）</span></div>
+                <div class="box "> 12321</div>
+            </div>
+            <div class="item">
+                <img src="./static/images/top_logo2.png" class="icon">
+                <div class="intro"> 年增长</div>
+                <div class="box "> 5.2%</div>
+            </div>
+        </div>
+        <div class="chart-cover map-cover">
+            <div id="map" class="chart"></div>
+            <div class="chart-title">贵阳市企业热力图</div>
+            <div class="chart-mask"></div>
+            <div class="chart-cover-dot top-left"></div>
+            <div class="chart-cover-dot top-right"></div>
+            <div class="chart-cover-dot bottom-left"></div>
+            <div class="chart-cover-dot bottom-right"></div>
+        </div>
+        <div class="table">
+            <div>
+                <span class="table-title active">中国500强</span>
+                <span class="table-title">上市公司</span>
+                <span class="table-title">纳税大户</span>
+            </div>
+            <div>
+                <div class="row">中国石油天然气股份有限公司</div>
+                <div class="row">中国建筑股份有限公司</div>
+                <div class="row">中国平安保险（集团）股份有限公司</div>
+                <div class="row">上海汽车集团股份有限公司</div>
+                <div class="row">中国移动有限公</div>
+            </div>
+            <div class="page"><span class="btn">&lt;</span> 1 <span class="note">/</span> 5 <span
+                    class="btn">&gt;</span></div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="chart-cover">
+            <div id="rightChart1" class="chart"></div>
+            <div class="chart-mask"></div>
+            <div class="chart-cover-dot top-left"></div>
+            <div class="chart-cover-dot top-right"></div>
+            <div class="chart-cover-dot bottom-left"></div>
+            <div class="chart-cover-dot bottom-right"></div>
+        </div>
+        <div class="chart-cover">
+            <div id="rightChart2" class="chart"></div>
+            <div class="chart-mask"></div>
+            <div class="chart-cover-dot top-left"></div>
+            <div class="chart-cover-dot top-right"></div>
+            <div class="chart-cover-dot bottom-left"></div>
+            <div class="chart-cover-dot bottom-right"></div>
+        </div>
+        <div class="chart-cover">
+            <div id="rightChart3" class="chart"></div>
+            <div class="chart-mask"></div>
+            <div class="chart-cover-dot top-left"></div>
+            <div class="chart-cover-dot top-right"></div>
+            <div class="chart-cover-dot bottom-left"></div>
+            <div class="chart-cover-dot bottom-right"></div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="./static/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript"
+        src="http://api.map.baidu.com/getscript?v=3.0&ak=OhF7yQeMCyrhdfZt1E3w4OvtCj0WOngK"></script>
+<script src="./static/js/echarts.min.js"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+<script type="text/javascript"
+        src="http://api.map.baidu.com/library/MarkerClusterer/1.2/src/MarkerClusterer_min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/library/Heatmap/2.0/src/Heatmap_min.js"></script>
+<script type="text/javascript" src="./static/js/index.js"></script>
+</body>
+</html>
