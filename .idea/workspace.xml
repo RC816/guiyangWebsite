@@ -47,8 +47,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="131" column="40" lean-forward="false" selection-start-line="131" selection-start-column="40" selection-end-line="131" selection-end-column="40" />
+            <state relative-caret-position="552">
+              <caret line="134" column="47" lean-forward="false" selection-start-line="134" selection-start-column="47" selection-end-line="134" selection-end-column="47" />
               <folding>
                 <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -75,7 +75,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>selectIndustryList</find>
       <find>45</find>
       <find>贵州大数据可视化</find>
       <find>font</find>
@@ -103,8 +102,9 @@
       <find>160</find>
       <find>71</find>
       <find>top</find>
-      <find>20px</find>
       <find>roam</find>
+      <find>http</find>
+      <find>20px</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -209,15 +209,15 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\rick.cai\guiyang\static\js\style" />
       <recent name="F:\rick.cai\guiyang\static\js" />
+      <recent name="F:\rick.cai\guiyang\static\js\style" />
       <recent name="F:\rick.cai\guiyang\static\json" />
       <recent name="F:\rick.cai\guiyang\static\images" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\rick.cai\guiyang\static\js" />
       <recent name="F:\rick.cai\guiyang\static\images" />
       <recent name="F:\rick.cai\guiyang\static\js\style" />
-      <recent name="F:\rick.cai\guiyang\static\js" />
       <recent name="F:\rick.cai\guiyang\static\json" />
     </key>
   </component>
@@ -277,12 +277,12 @@
       <workItem from="1535016730648" duration="1115000" />
       <workItem from="1535677940723" duration="2488000" />
       <workItem from="1535943199785" duration="28781000" />
-      <workItem from="1536112443278" duration="4673000" />
+      <workItem from="1536112443278" duration="4877000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136826000" />
+    <option name="totallyTimeSpent" value="137030000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-32" y="0" width="1378" height="893" extended-state="0" />
@@ -339,22 +339,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-          <folding>
-            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#3723#3727#1" expanded="true" />
-            <element signature="e#3805#3809#1" expanded="true" />
-            <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -816,10 +800,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/bmap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="131" column="40" lean-forward="false" selection-start-line="131" selection-start-column="40" selection-end-line="131" selection-end-column="40" />
+        <state relative-caret-position="552">
+          <caret line="134" column="47" lean-forward="false" selection-start-line="134" selection-start-column="47" selection-end-line="134" selection-end-column="47" />
           <folding>
             <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
